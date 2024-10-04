@@ -1,0 +1,14 @@
+[
+  { 
+	file: "game:recipes/barrel/cider.json", 
+	op: "remove", 
+	path: "/3",
+	"side": "server"
+  },
+  { 
+	file: "game:recipes/barrel/cider.json", 
+	op: "remove", 
+	path: "/4",
+	"side": "server" 
+  }
+]

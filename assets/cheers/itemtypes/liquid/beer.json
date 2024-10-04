@@ -1,0 +1,83 @@
+{
+	code: "beerportion",
+	variantgroups: [
+		{ code: "type", states: ["spelt", "rye" ] },
+		{ code: "state", states: ["ale", "stout", "maltbeer" ] }
+	],
+	class: "ItemLiquidPortion",
+	matterState: "liquid",
+	attributes: {
+		handbook: {
+			ignoreCreativeInvStacks: true
+		},
+		distillationPropsbytype: {
+			"*-stout": {
+				distilledStack: { type: "item", code: "spiritportion-spelt" }, 
+				ratio: 0.05 
+			},
+			"*-maltbeer": {
+				distilledStack: { type: "item", code: "spiritportion-mead" }, 
+				ratio: 0.05 
+			},
+			"*-ale": {
+				distilledStack: { type: "item", code: "spiritportion-rye" }, 
+				ratio: 0.05 
+			},			
+			"*": {
+				distilledStack: { type: "item", code: "spiritportion-{fruit}" },
+				ratio: 0.1
+			}
+		},
+		waterTightContainerProps: {
+			containable: true,
+			itemsPerLitre: 100,
+			texturebytype: {
+				"*-stout": { base: "game:block/liquid/honey", alpha: 180 },
+				"*-maltbeer": { base: "game:block/food/pie/fill-cassava", alpha: 180 },
+				"*-ale": { base: "game:block/food/pie/fill-breadfruit", alpha: 180 },
+				"*": { base: "game:block/food/pie/fill-{fruit}", alpha: 180 }
+			},
+			allowSpill: true,
+			whenSpilled: { 
+				action: "DropContents",
+				stack: { type: "item", code: "beerportion-{type}-{state}" } 
+			},
+			nutritionPropsPerLitre: {
+				satiety: 200,
+				intoxication: 0.10,
+				foodcategorybytype: {
+				"*": "Grain"
+				}
+			}
+		}
+	},
+	shape: { base: "game:item/liquid" },
+	texturebytype: {
+		"*-stout": { base: "game:block/liquid/honey", alpha: 180 },
+		"*-maltbeer": { base: "game:block/food/pie/fill-cassava", alpha: 180 },
+		"*-ale": { base: "game:block/food/pie/fill-breadfruit", alpha: 180 },
+		"*": { base: "game:block/food/pie/fill-{fruit}", alpha: 180 }
+	},
+creativeinventoryStacks: [ { tabs: ["general", "liquids"], stacks: [ { type: "block", code: "woodbucket", attributes: { ucontents: [ { type:"item", code: "beerportion-*", states: ["spelt", "rye" ], makefull: true } ] } } ] } ],	maxstacksize: 5000,
+	materialDensity: 200,
+	guiTransform: {
+		translation: { x: 0, y: 1, z: 0 },
+		rotation: { x: 123, y: -33, z: -13 },
+		origin: { x: 0.5, y: 0, z: 0.5 },
+		scale: 1.4
+	},
+	fpHandTransform: {
+		translation: { x: 0, y: 0, z: 0 },
+		rotation: { x: 25, y: 157, z: -5 }
+	},
+	tpHandTransform: {
+		translation: { x: -1.5, y: -1, z: -1.4 }
+	},
+	transitionableProps: [{
+		type: "Perish",
+		freshHours: { avg: 432 },
+		transitionHours: { avg: 48 },
+		transitionedStack: { type: "item", code: "rot" },
+		transitionRatio: 0.005
+	}],
+}

@@ -1,0 +1,85 @@
+[
+	{
+		Ingredients: [
+			{
+				type: "item",
+				code: "waterportion",
+				quantity: 500
+			},
+			{
+				type: "item",
+				code: "cheers:crushed-malt-{type}-light",
+				quantity: 2
+			}
+		],
+		Simmering: {
+			meltingPoint: 200,
+			meltingDuration: 110,
+			smeltedRatio: 1,
+			smeltingType: "bake",
+			smeltedStack: {
+				type: "item",
+				code: "cheers:wort-{type}-ale",
+				"quantity":  500
+			},
+			requiresContainer: false
+		}
+	},
+	{
+		Ingredients: [
+			{
+				type: "item",
+				code: "waterportion",
+				quantity: 500
+			},
+			{
+				type: "item",
+				code: "cheers:crushed-malt-{type}-dark",
+				quantity: 2
+			}
+		],
+		Simmering: {
+			meltingPoint: 200,
+			meltingDuration: 110,
+			smeltedRatio: 1,
+			smeltingType: "bake",
+			smeltedStack: {
+				type: "item",
+				code: "cheers:wort-{type}-stout",
+				"quantity":  500
+			},
+			requiresContainer: false
+		}
+	},
+	{
+		Ingredients: [
+			{
+				type: "item",
+				code: "waterportion",
+				quantity: 500
+			},
+			{
+				type: "item",
+				code: "cheers:crushed-malt-{type}-dark",
+				quantity: 2
+			},
+			{
+				type: "item",
+				code: "game:honeyportion",
+				quantity: 10
+			}
+		],
+		Simmering: {
+			meltingPoint: 200,
+			meltingDuration: 110,
+			smeltedRatio: 1,
+			smeltingType: "bake",
+			smeltedStack: {
+				type: "item",
+				code: "cheers:wort-{type}-maltbeer",
+				"quantity":  500
+			},
+			requiresContainer: false
+		}
+	}
+]

@@ -1,0 +1,70 @@
+{
+	code: "germinatedgrain",
+	maxstacksize: 64,
+	attributes: {
+		inContainerTexture: { base: "game:block/food/grain/{type}" },
+		displaycaseable: true,
+		shelvable: true,
+		bakingProperties: {
+			temp: 50,
+			levelFrom: 0.0,
+			levelTo: 0.5,
+			startScaleY: 1.0,
+			endScaleY: 0.8,
+			resultCode: "cheers:malt-{type}-light",
+		},
+	},
+	attributesByType: {
+		"*": { "foodTags": ["{type}"], "nutritionPropsWhenInMeal": { satiety: 120, foodcategory: "Grain" }}
+	},
+	variantgroups: [
+		{ code: "type", states: ["spelt", "rye" ] }
+	],
+	texture: { base: "game:block/food/grain/{type}-pile" },
+	shape: { base: "game:item/resource/crushed/normal"  },
+	creativeinventory: { "general": ["*"], "items": ["*"] },
+	nutritionPropsByType: {
+		"*": {
+			satiety: 80, 
+			foodcategory: "Grain"
+		}
+	},
+	transitionableProps: [{
+		type: "Perish",
+		freshHours: { avg: 36 },
+		transitionHours: { avg: 24 },
+		transitionedStack: { type: "item", code: "rot" },
+		transitionRatio: 0.75
+	}],
+	materialDensity: 600,	
+	guiTransform: {
+		translation: { x: 0, y: 0, z: -25 },
+		rotation: { x: 171, y: 57, z: -20 },
+		origin: { x: 0.46, y: 0.11, z: 0.39 },
+		scale: 2.64
+	},
+	fpHandTransform: {
+		translation: { x: 0.1, y: 0.16, z: 0 },
+		rotation: { x: 37, y: 77, z: 2 },
+		origin: { x: 0.5, y: 0.1, z: 0.5 },
+		scale: 1.95
+	},
+	tpHandTransform: {
+		"translation": { "x": -0.04, "y": -0.6, "z": -0.8 },
+		"rotation": { "x": 119, "y": -7, "z": -72 },
+		"origin": { "x": -0.1, "y": 0.32, "z": 0.82 },
+		"scale": 0.48
+	},
+	groundTransform: {
+		translation: { x: 0, y: 0, z: 0 },
+		rotation: { x: 3, y: 1, z: 0 },
+		origin: { x: 0.5, y: 0, z: 0.5 },
+		scale: 3
+	},
+	"heldRightReadyAnimationByType": {
+		"*": "holdbothhands"
+	},
+	"heldTpIdleAnimationByType": {
+		"*": "holdbothhands"
+    }
+}

@@ -1,0 +1,87 @@
+{
+	code: "malt",
+	maxstacksizeByType: {
+		"*": 64,
+	},
+	variantgroups: [
+		{ code: "type", states: ["spelt", "rye" ] },
+		{ code: "state", states: ["light", "dark" ] }
+	],
+	shape: { base: "game:item/food/bread/{type}bread" },
+	texturesbytype: {
+		"*-light": { "bread": {base: "game:item/food/grain/{type}bread2" }},
+		"*-dark": { "bread": {base: "game:item/food/grain/{type}bread" }}
+	},
+	creativeinventory: { "general": ["*"], "items": ["*"] },
+	attributesByType: {
+		"*-light": {
+			displaycaseable: true,
+			shelvable: true,
+			bakingProperties: {
+				temp: 80,
+				levelFrom: 0.5,
+				levelTo: 0.75,
+				startScaleY: 1,
+				endScaleY: 0.8,
+				resultCode: "malt-{type}-light",
+				initialCode: "germinatedgrain-{type}"
+			}
+		},
+		"*-dark": {
+			displaycaseable: true,
+			shelvable: true,
+			bakingProperties: {
+				temp: 105,
+				levelFrom: 0.75,
+				levelTo: 1,
+				startScaleY: 0.8,
+				endScaleY: 0.7,
+				resultCode: "malt-{type}-dark",
+				initialCode: "malt-{type}-light"
+			}
+		}
+	},
+		nutritionPropsByType: {
+		"*": {
+			satiety: 90, 
+			foodcategory: "Grain"
+		}
+	},
+	grindingProps: {
+		groundStack: { type: "item", code: "crushed-malt-{type}-{state}" }
+	},
+	transitionablePropsByType: {
+		"*":  [{
+			type: "Perish",
+			freshHours: { avg: 120 },
+			transitionHours: { avg: 48 },
+			transitionedStack: { type: "item", code: "rot" },
+			transitionRatio: 1
+		}]
+	},
+	materialDensity: 200,
+	guiTransform: {
+		translation: { x: 0, y: 0, z: 0 },
+		rotation: { x: -30, y: 26, z: 180 },
+		origin: { x: 0.52, y: 0.07, z: 0.5 },
+		scale: 4.9
+	},
+	groundTransform: {
+		translation: { x: 0, y: 0, z: 0 },
+		rotation: { x: 0, y: 0, z: 1 },
+		origin: { x: 0.5, y: 0, z: 0.5 },
+		scale: 4.5
+	},
+	tpHandTransform: {
+		translation: { x: -0.54, y: -0.16, z: -0.4 },
+		rotation: { x: 88, y: -85, z: 2 },
+		origin: { x: 0.5, y: 0.13, z: 0.5 },
+		scale: 1
+	},
+	fpHandTransform: {
+		translation: { x: 0, y: 0.24, z: 0.3 },
+		rotation: { x: 104, y: 0, z: 71 },
+		origin: { x: 0.5, y: 0.1, z: 0.5 },
+		scale: 2.5
+	}
+}
