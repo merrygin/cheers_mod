@@ -2,7 +2,9 @@
 	code: "crushed-malt",
 	maxstacksize: 64,
 	attributes: {
-		dissolveInWater: true
+		inContainerTexture: { base: "game:block/food/grain/{type}" },
+		displaycaseable: true,
+		shelvable: true
 	},
 	variantgroups: [
 		{ code: "type", states: ["spelt", "rye" ] },

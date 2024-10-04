@@ -1,8 +1,6 @@
 {
 	code: "malt",
-	maxstacksizeByType: {
-		"*": 64,
-	},
+	maxstacksize: 64,
 	variantgroups: [
 		{ code: "type", states: ["spelt", "rye" ] },
 		{ code: "state", states: ["light", "dark" ] }
@@ -15,6 +13,7 @@
 	creativeinventory: { "general": ["*"], "items": ["*"] },
 	attributesByType: {
 		"*-light": {
+			inContainerTexture: { base: "game:block/food/grain/{type}" },
 			displaycaseable: true,
 			shelvable: true,
 			bakingProperties: {
@@ -28,6 +27,7 @@
 			}
 		},
 		"*-dark": {
+			inContainerTexture: { base: "game:block/food/grain/{type}" },
 			displaycaseable: true,
 			shelvable: true,
 			bakingProperties: {

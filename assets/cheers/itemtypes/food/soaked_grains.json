@@ -1,7 +1,11 @@
 {
 	code: "soaked",
 	maxstacksize: 64,
-	attributes: {inContainerTexture: { base: "game:block/food/grain/{type}" }},
+	attributes: {
+		inContainerTexture: { base: "game:block/food/grain/{type}" },
+		displaycaseable: true,
+		shelvable: true
+	},
 	attributesByType: {
 		"*": { "foodTags": ["{type}"], "nutritionPropsWhenInMeal": { satiety: 240, foodcategory: "Grain" }}
 	},

@@ -79,5 +79,5 @@
 		transitionHours: { avg: 48 },
 		transitionedStack: { type: "item", code: "rot" },
 		transitionRatio: 0.005
-	}],
+	}]
 }
