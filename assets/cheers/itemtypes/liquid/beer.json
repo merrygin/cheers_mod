@@ -10,6 +10,7 @@
 		handbook: {
 			ignoreCreativeInvStacks: true
 		},
+		"inBowlShape": { "base": "game:block/food/meal/liquid" },
 		distillationPropsbytype: {
 			"*-stout": {
 				distilledStack: { type: "item", code: "spiritportion-spelt" }, 
@@ -40,7 +41,7 @@
 			allowSpill: true,
 			whenSpilled: { 
 				action: "DropContents",
-				stack: { type: "item", code: "beerportion-{type}-{state}" } 
+				stack: { type: "item", code: "cheers:beerportion-{type}-{state}" } 
 			},
 			nutritionPropsPerLitre: {
 				satiety: 200,
