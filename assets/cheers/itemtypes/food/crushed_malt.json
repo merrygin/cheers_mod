@@ -5,7 +5,7 @@
 		dissolveInWater: true
 	},
 	variantgroups: [
-		{ code: "type", states: ["spelt", "rye", "barley" ] },
+		{ code: "type", states: ["spelt", "rye" ] },
 		{ code: "state", states: ["light", "dark" ] },
 	],
 	shape: { base: "game:item/food/flour" },

@@ -1,7 +1,7 @@
 {
 	code: "wort",
 	variantgroups: [
-		{ code: "type", states: ["spelt", "rye", "barley" ] },
+		{ code: "type", states: ["spelt", "rye" ] },
 		{ code: "state", states: ["ale", "stout", "maltbeer" ] }
 	],
 	class: "ItemLiquidPortion",
@@ -33,7 +33,7 @@
 			}
 		}
 	},
-	shape: { base: "item/liquid" },
+	shape: { base: "game:item/liquid" },
 	texturebytype: {
 		"*-spelt": { base: "game:block/food/pie/fill-fish", alpha: 180 },
 		"*-rye": { base: "game:block/food/pie/fill-gooseberry", alpha: 180 },
