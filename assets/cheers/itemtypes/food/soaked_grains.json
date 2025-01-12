@@ -24,8 +24,8 @@
 	"transitionableProps": [{
 		"type": "Convert",
 		"freshHours": { "avg": 0 },
-		"transitionHours": { "avg": 24 },
-		"transitionedStack": { "type": "item", "code": "cheers:germinated-{type}" },
+		"transitionHours": { "avg": 48 },
+		"transitionedStack": { "type": "item", "code": "cheers:germinatedgrain-{type}" },
 		"transitionRatio": 1
 	}],
 	"materialDensity": 500,	
