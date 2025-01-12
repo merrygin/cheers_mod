@@ -20,8 +20,7 @@
 			"smeltingType": "bake",
 			"smeltedStack": {
 				"type": "item",
-				"code": "cheers:alewort-*",
-				"name": "type",
+				"code": "cheers:alewort-{type}",
 				"quantity":  500
 			},
 			"requiresContainer": false
@@ -48,8 +47,7 @@
 			"smeltingType": "bake",
 			"smeltedStack": {
 				"type": "item",
-				"code": "cheers:stoutwort-*",
-				"name": "type",
+				"code": "cheers:stoutwort-{type}",
 				"quantity":  500
 			},
 			"requiresContainer": false
@@ -81,8 +79,7 @@
 			"smeltingType": "bake",
 			"smeltedStack": {
 				"type": "item",
-				"code": "cheers:maltbeerwort-*",
-				"name": "type",
+				"code": "cheers:maltbeerwort-{type}",
 				"quantity":  500
 			},
 			"requiresContainer": false
