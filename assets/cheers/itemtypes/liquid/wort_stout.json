@@ -50,7 +50,6 @@
 							{ 
 								"type":"item", 
 								"code": "cheers:stoutwort-{type}", 
-								"states": ["spelt", "rye" ], 
 								"makefull": true 
 							} 
 						]

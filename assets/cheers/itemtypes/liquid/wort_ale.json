@@ -49,8 +49,7 @@
 						"ucontents": [ 
 							{ 
 								"type":"item", 
-								"code": "cheers:wort-{type}", 
-								"states": ["spelt", "rye" ], 
+								"code": "cheers:wort-{type}",
 								"makefull": true 
 							} 
 						]

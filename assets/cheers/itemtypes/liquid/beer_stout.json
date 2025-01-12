@@ -48,7 +48,6 @@
 							{ 
 								"type":"item", 
 								"code": "cheers:stoutportion-{type}", 
-								"states": ["spelt", "rye" ], 
 								"makefull": true 
 							} 
 						]

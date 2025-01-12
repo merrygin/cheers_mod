@@ -48,7 +48,6 @@
 							{ 
 								"type":"item", 
 								"code": "cheers:maltbeerportion-{type}", 
-								"states": ["spelt", "rye" ], 
 								"makefull": true 
 							} 
 						]
