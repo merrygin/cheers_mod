@@ -41,7 +41,7 @@
 			}
 		}
 	},
-		"nutritionPropsByType": {
+	"nutritionPropsByType": {
 		"*": {
 			"satiety": 90, 
 			"foodcategory": "Grain"
@@ -55,7 +55,7 @@
 			"type": "Perish",
 			"freshHours": { "avg": 120 },
 			"transitionHours": { "avg": 48 },
-			"transitionedStack": { "type": "item", "code": "rot" },
+			"transitionedStack": { "type": "item", "code": "game:rot" },
 			"transitionRatio": 1
 		}]
 	},

@@ -8,7 +8,8 @@
 			},
 			{
 				"type": "item",
-				"code": "cheers:crushed-malt-{type}-light",
+				"code": "cheers:crushed-malt-*-light",
+				"name": "type",
 				"quantity": 2
 			}
 		],
@@ -19,7 +20,8 @@
 			"smeltingType": "bake",
 			"smeltedStack": {
 				"type": "item",
-				"code": "cheers:alewort-{type}",
+				"code": "cheers:alewort-*",
+				"name": "type",
 				"quantity":  500
 			},
 			"requiresContainer": false
@@ -34,7 +36,8 @@
 			},
 			{
 				"type": "item",
-				"code": "cheers:crushed-malt-{type}-dark",
+				"code": "cheers:crushed-malt-*-dark",
+				"name": "type",
 				"quantity": 2
 			}
 		],
@@ -45,7 +48,8 @@
 			"smeltingType": "bake",
 			"smeltedStack": {
 				"type": "item",
-				"code": "cheers:stoutwort-{type}",
+				"code": "cheers:stoutwort-*",
+				"name": "type",
 				"quantity":  500
 			},
 			"requiresContainer": false
@@ -60,7 +64,8 @@
 			},
 			{
 				"type": "item",
-				"code": "cheers:crushed-malt-{type}-dark",
+				"code": "cheers:crushed-malt-*-dark",
+				"name": "type",
 				"quantity": 2
 			},
 			{
@@ -76,7 +81,8 @@
 			"smeltingType": "bake",
 			"smeltedStack": {
 				"type": "item",
-				"code": "cheers:maltbeerwort-{type}",
+				"code": "cheers:maltbeerwort-*",
+				"name": "type",
 				"quantity":  500
 			},
 			"requiresContainer": false

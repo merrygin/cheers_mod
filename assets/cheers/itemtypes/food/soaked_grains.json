@@ -2,7 +2,7 @@
 	"code": "soaked",
 	"maxstacksize": 64,
 	"variantgroups": [
-		{ "code": "type", "states": ["spelt", "rye" ] }
+		{ "code": "type", "states": [ "spelt", "rye" ] }
 	],
 	"attributes": {
 		"inContainerTexture": { "base": "game:block/food/grain/{type}" },
@@ -22,7 +22,7 @@
 		}
 	},
 	"transitionableProps": [{
-		"type": "Convert",
+		"type": "Cure",
 		"freshHours": { "avg": 0 },
 		"transitionHours": { "avg": 48 },
 		"transitionedStack": { "type": "item", "code": "cheers:germinatedgrain-{type}" },

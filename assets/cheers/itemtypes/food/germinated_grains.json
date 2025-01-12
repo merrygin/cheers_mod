@@ -2,7 +2,7 @@
 	"code": "germinatedgrain",
 	"maxstacksize": 64,
 	"variantgroups": [
-		{ "code": "type", "states": ["spelt", "rye" ] }
+		{ "code": "type", "states": [ "spelt", "rye" ] }
 	],
 	"attributes": {
 		"inContainerTexture": { "base": "game:block/food/grain/{type}" },
@@ -33,7 +33,7 @@
 		"type": "Perish",
 		"freshHours": { "avg": 36 },
 		"transitionHours": { "avg": 24 },
-		"transitionedStack": { "type": "item", "code": "rot" },
+		"transitionedStack": { "type": "item", "code": "game:rot" },
 		"transitionRatio": 0.75
 	}],
 	"materialDensity": 600,	
