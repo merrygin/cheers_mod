@@ -6,5 +6,10 @@
     "Merrygin"
   ],
   "description": "A mod expanding on the simplified mechanics of brewing beer currently in the game.  Realistic beer brewing, new crops and beer flavorings, different types of beer, collectible mugs, and more.  Everything is WIP and much is to be desired!",
-  "version": "0.0.1"
+  "version": "0.0.1",
+
+  "dependencies": {
+    "aculinaryartillery": "1.2.1",
+    "game": 1.20
+  }
 }
