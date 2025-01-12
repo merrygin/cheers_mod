@@ -1,8 +1,7 @@
 {
-	"code": "beerportion",
+	"code": "alewort",
 	"variantgroups": [
-		{ "code": "type", "states": ["spelt", "rye" ] },
-		{ "code": "state", "states": ["ale", "stout", "maltbeer" ] }
+		{ "code": "type", "states": ["spelt", "rye" ] }
 	],
 	"class": "ItemLiquidPortion",
 	"matterState": "liquid",
@@ -11,41 +10,22 @@
 			"ignoreCreativeInvStacks": true
 		},
 		"inBowlShape": { "base": "game:block/food/meal/liquid" },
-		"distillationPropsbytype": {
-			"*-stout": {
-				"distilledStack": { "type": "item", "code": "spiritportion-spelt" }, 
-				"ratio": 0.05 
-			},
-			"*-maltbeer": {
-				"distilledStack": { "type": "item", "code": "spiritportion-mead" }, 
-				"ratio": 0.05 
-			},
-			"*-ale": {
-				"distilledStack": { "type": "item", "code": "spiritportion-rye" }, 
-				"ratio": 0.05 
-			},			
-			"*": {
-				"distilledStack": { "type": "item", "code": "spiritportion-{fruit}" },
-				"ratio": 0.1
-			}
-		},
 		"waterTightContainerProps": {
 			"containable": true,
 			"itemsPerLitre": 100,
 			"texturebytype": {
-				"*-stout": { "base": "game:block/liquid/honey", "alpha": 180 },
-				"*-maltbeer": { "base": "game:block/food/pie/fill-cassava", "alpha": 180 },
-				"*-ale": { "base": "game:block/food/pie/fill-breadfruit", "alpha": 180 },
+				"*-spelt": { "base": "game:block/food/pie/fill-fish", "alpha": 180 },
+				"*-rye": { "base": "game:block/food/pie/fill-gooseberry", "alpha": 180 },
 				"*": { "base": "game:block/food/pie/fill-{fruit}", "alpha": 180 }
 			},
 			"allowSpill": true,
 			"whenSpilled": { 
 				"action": "DropContents",
-				"stack": { "type": "item", "code": "cheers:beerportion-{type}-{state}" } 
+				"stack": { "type": "item", "code": "cheers:wort-{type}" } 
 			},
 			"nutritionPropsPerLitre": {
-				"satiety": 200,
-				"intoxication": 0.10,
+				"satiety": 50,
+				"intoxication": 0,
 				"foodcategorybytype": {
 				"*": "Grain"
 				}
@@ -54,9 +34,8 @@
 	},
 	"shape": { "base": "game:item/liquid" },
 	"texturebytype": {
-		"*-stout": { "base": "game:block/liquid/honey", "alpha": 180 },
-		"*-maltbeer": { "base": "game:block/food/pie/fill-cassava", "alpha": 180 },
-		"*-ale": { "base": "game:block/food/pie/fill-breadfruit", "alpha": 180 },
+		"*-spelt": { "base": "game:block/food/pie/fill-fish", "alpha": 180 },
+		"*-rye": { "base": "game:block/food/pie/fill-gooseberry", "alpha": 180 },
 		"*": { "base": "game:block/food/pie/fill-{fruit}", "alpha": 180 }
 	},
 	"creativeinventoryStacks": [ 
@@ -70,7 +49,7 @@
 						"ucontents": [ 
 							{ 
 								"type":"item", 
-								"code": "cheers:beerportion-*", 
+								"code": "cheers:wort-{type}", 
 								"states": ["spelt", "rye" ], 
 								"makefull": true 
 							} 
@@ -80,6 +59,7 @@
 			] 
 		} 
 	],
+	"maxstacksize": 5000,
 	"materialDensity": 200,
 	"guiTransform": {
 		"translation": { "x": 0, "y": 1, "z": 0 },
@@ -96,7 +76,7 @@
 	},
 	"transitionableProps": [{
 		"type": "Perish",
-		"freshHours": { "avg": 432 },
+		"freshHours": { "avg": 120 },
 		"transitionHours": { "avg": 48 },
 		"transitionedStack": { "type": "item", "code": "rot" },
 		"transitionRatio": 0.005

@@ -3,24 +3,24 @@
 		"code": "stout",
 		"sealHours": 336,
 		"ingredients": [
-			{ "type": "item", "code": "wort-*-stout",  "name": "gruit", "litres": 0.1 }
+			{ "type": "item", "code": "stoutwort-{type}",  "name": "gruit", "litres": 0.1 }
 		],
-		"output": { "type": "item", "code": "{gruit}-stout", "litres": 0.1 }
+		"output": { "type": "item", "code": "stoutportion-{gruit}", "litres": 0.1 }
 	},
 	{
 		"code": "ale",
 		"sealHours": 336,
 		"ingredients": [
-			{ "type": "item", "code": "wort-*-ale",  "name": "gruit", "litres": 0.1 }
+			{ "type": "item", "code": "alewort-{type}",  "name": "gruit", "litres": 0.1 }
 		],
-		"output": { "type": "item", "code": "{gruit}-ale", "litres": 0.1 }
+		"output": { "type": "item", "code": "aleportion-{gruit}", "litres": 0.1 }
 	},
 	{
 		"code": "maltbeer",
 		"sealHours": 336,
 		"ingredients": [
-			{ "type": "item", "code": "wort-*-maltbeer",  "name": "gruit", "litres": 0.1 }
+			{ "type": "item", "code": "maltbeerwort-{type}",  "name": "gruit", "litres": 0.1 }
 		],
-		"output": { "type": "item", "code": "{gruit}-maltbeer", "litres": 0.1 }
+		"output": { "type": "item", "code": "maltbeerportion-{gruit}", "litres": 0.1 }
 	}
 ]

@@ -1,8 +1,7 @@
 {
-	"code": "wort",
+	"code": "aleportion",
 	"variantgroups": [
-		{ "code": "type", "states": ["spelt", "rye" ] },
-		{ "code": "state", "states": ["ale", "stout", "maltbeer" ] }
+		{ "code": "type", "states": ["spelt", "rye" ] }
 	],
 	"class": "ItemLiquidPortion",
 	"matterState": "liquid",
@@ -15,20 +14,18 @@
 			"containable": true,
 			"itemsPerLitre": 100,
 			"texturebytype": {
-				"*-spelt": { "base": "game:block/food/pie/fill-fish", "alpha": 180 },
-				"*-rye": { "base": "game:block/food/pie/fill-gooseberry", "alpha": 180 },
-				"*": { "base": "game:block/food/pie/fill-{fruit}", "alpha": 180 }
+				"*-rye": { "base": "game:block/liquid/honey", "alpha": 180 },
+				"*-spelt": { "base": "game:block/food/pie/fill-cassava", "alpha": 180 }
 			},
 			"allowSpill": true,
 			"whenSpilled": { 
 				"action": "DropContents",
-				"stack": { "type": "item", "code": "cheers:wort-{type}-{state}" } 
+				"stack": { "type": "item", "code": "cheers:aleportion-{type}" } 
 			},
 			"nutritionPropsPerLitre": {
-				"satiety": 120,
+				"satiety": 200,
+				"intoxication": 0.10,
 				"foodcategorybytype": {
-				"*-spelt": "Grain",
-				"*-rye": "Grain",
 				"*": "Grain"
 				}
 			}
@@ -36,9 +33,8 @@
 	},
 	"shape": { "base": "game:item/liquid" },
 	"texturebytype": {
-		"*-spelt": { "base": "game:block/food/pie/fill-fish", "alpha": 180 },
-		"*-rye": { "base": "game:block/food/pie/fill-gooseberry", "alpha": 180 },
-		"*": { "base": "game:block/food/pie/fill-{fruit}", "alpha": 180 }
+		"*-rye": { "base": "game:block/liquid/honey", "alpha": 180 },
+		"*-spelt": { "base": "game:block/food/pie/fill-cassava", "alpha": 180 }
 	},
 	"creativeinventoryStacks": [ 
 		{
@@ -51,7 +47,7 @@
 						"ucontents": [ 
 							{ 
 								"type":"item", 
-								"code": "cheers:wort-*", 
+								"code": "cheers:aleportion-{type}", 
 								"states": ["spelt", "rye" ], 
 								"makefull": true 
 							} 
@@ -78,7 +74,7 @@
 	},
 	"transitionableProps": [{
 		"type": "Perish",
-		"freshHours": { "avg": 120 },
+		"freshHours": { "avg": 432 },
 		"transitionHours": { "avg": 48 },
 		"transitionedStack": { "type": "item", "code": "rot" },
 		"transitionRatio": 0.005

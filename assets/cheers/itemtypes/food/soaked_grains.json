@@ -1,6 +1,9 @@
 {
 	"code": "soaked",
 	"maxstacksize": 64,
+	"variantgroups": [
+		{ "code": "type", "states": ["spelt", "rye" ] }
+	],
 	"attributes": {
 		"inContainerTexture": { "base": "game:block/food/grain/{type}" },
 		"displaycaseable": true,
@@ -9,9 +12,6 @@
 	"attributesByType": {
 		"*": { "foodTags": ["{type}"], "nutritionPropsWhenInMeal": { "satiety": 240, "foodcategory": "Grain" }}
 	},
-	"variantgroups": [
-		{ "code": "type", "states": ["spelt", "rye" ] }
-	],
 	"texture": { "base": "game:block/food/grain/{type}-pile" },
 	"shape": { "base": "game:item/resource/crushed/normal"  },
 	"creativeinventory": { "general": ["*"], "items": ["*"] },

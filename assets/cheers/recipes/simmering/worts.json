@@ -3,7 +3,7 @@
 		"Ingredients": [
 			{
 				"type": "item",
-				"code": "waterportion",
+				"code": "game:waterportion",
 				"quantity": 500
 			},
 			{
@@ -19,7 +19,7 @@
 			"smeltingType": "bake",
 			"smeltedStack": {
 				"type": "item",
-				"code": "cheers:wort-{type}-ale",
+				"code": "cheers:alewort-{type}",
 				"quantity":  500
 			},
 			"requiresContainer": false
@@ -29,7 +29,7 @@
 		"Ingredients": [
 			{
 				"type": "item",
-				"code": "waterportion",
+				"code": "game:waterportion",
 				"quantity": 500
 			},
 			{
@@ -45,7 +45,7 @@
 			"smeltingType": "bake",
 			"smeltedStack": {
 				"type": "item",
-				"code": "cheers:wort-{type}-stout",
+				"code": "cheers:stoutwort-{type}",
 				"quantity":  500
 			},
 			"requiresContainer": false
@@ -55,7 +55,7 @@
 		"Ingredients": [
 			{
 				"type": "item",
-				"code": "waterportion",
+				"code": "game:waterportion",
 				"quantity": 500
 			},
 			{
@@ -76,7 +76,7 @@
 			"smeltingType": "bake",
 			"smeltedStack": {
 				"type": "item",
-				"code": "cheers:wort-{type}-maltbeer",
+				"code": "cheers:maltbeerwort-{type}",
 				"quantity":  500
 			},
 			"requiresContainer": false

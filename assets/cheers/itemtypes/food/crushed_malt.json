@@ -1,15 +1,15 @@
 {
 	"code": "crushed-malt",
 	"maxstacksize": 64,
+	"variantgroups": [
+		{ "code": "type", "states": ["spelt", "rye" ] },
+		{ "code": "state", "states": ["light", "dark" ] }
+	],
 	"attributes": {
 		"inContainerTexture": { "base": "game:block/food/grain/{type}" },
 		"displaycaseable": true,
 		"shelvable": true
 	},
-	"variantgroups": [
-		{ "code": "type", "states": ["spelt", "rye" ] },
-		{ "code": "state", "states": ["light", "dark" ] }
-	],
 	"shape": { "base": "game:item/food/flour" },
 	"texture": { "base": "game:item/food/grain/{type}-flour" },
 	"creativeinventory": { "general": ["*"], "items": ["*"] },
