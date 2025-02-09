@@ -6,10 +6,7 @@
 		{ "code": "state", "states": ["light", "dark" ] }
 	],
 	"shape": { "base": "game:item/resource/crushed/rocksalt" },
-	"texturesbytype": {
-		"*-light": { "base": "game:item/resource/crushed/bauxite" },
-		"*-dark": { "base": "game:item/resource/crushed/ilmenite" }
-	},
+	"texture": { "base": "game:item/resource/crushed/ilmenite" },
 	"behaviors": [
 		{ "name": "GroundStorable", "properties": { "layout": "Quadrants", "collisionBox": { "x1": 0, "y1": 0, "z1": 0, "x2": 1, "y2": 0.125, "z2": 1 } } }
 	],
