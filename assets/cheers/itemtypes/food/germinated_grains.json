@@ -14,7 +14,7 @@
 			"levelTo": 0.5,
 			"startScaleY": 1.0,
 			"endScaleY": 0.8,
-			"resultCode": "cheers:malt-{type}-light"
+			"resultCode": "cheers:alt-{type}-light"
 		}
 	},
 	"attributesByType": {

@@ -10,10 +10,12 @@
 		"*-light": { "bread": {"base": "game:item/food/grain/{type}bread2" }},
 		"*-dark": { "bread": {"base": "game:item/food/grain/{type}bread" }}
 	},
+	"behaviors": [
+		{ "name": "GroundStorable", "properties": { "layout": "Quadrants", "collisionBox": { "x1": 0, "y1": 0, "z1": 0, "x2": 1, "y2": 0.125, "z2": 1 } } }
+	],
 	"creativeinventory": { "general": ["*"], "items": ["*"] },
-	"attributesByType": {
+	"attributes": {
 		"*-light": {
-			"inContainerTexture": { "base": "game:block/food/grain/{type}" },
 			"displaycaseable": true,
 			"shelvable": true,
 			"bakingProperties": {
@@ -22,12 +24,11 @@
 				"levelTo": 0.75,
 				"startScaleY": 1,
 				"endScaleY": 0.8,
-				"resultCode": "malt-{type}-light",
-				"initialCode": "germinatedgrain-{type}"
+				"resultCode": "cheers:malt-{type}-light",
+				"initialCode": "cheers:germinatedgrain-{type}"
 			}
 		},
 		"*-dark": {
-			"inContainerTexture": { "base": "game:block/food/grain/{type}" },
 			"displaycaseable": true,
 			"shelvable": true,
 			"bakingProperties": {
@@ -36,8 +37,8 @@
 				"levelTo": 1,
 				"startScaleY": 0.8,
 				"endScaleY": 0.7,
-				"resultCode": "malt-{type}-dark",
-				"initialCode": "malt-{type}-light"
+				"resultCode": "cheers:malt-{type}-dark",
+				"initialCode": "cheers:malt-{type}-light"
 			}
 		}
 	},
@@ -47,7 +48,7 @@
 			"meltingDuration": 15,
 			"smeltedRatio": 1,
 			"smeltingType": "bake",
-			"smeltedStack": { "type": "item", "code": "malt-{type}-dark" },
+			"smeltedStack": { "type": "item", "code": "cheers:malt-{type}-dark" },
 			"requiresContainer": false
 		}
 	},
@@ -58,17 +59,15 @@
 		}
 	},
 	"grindingProps": {
-		"groundStack": { "type": "item", "code": "crushed-malt-{type}-{state}" }
+		"groundStack": { "type": "item", "code": "cheers:crushed-malt-{type}-{state}" }
 	},
-	"transitionablePropsByType": {
-		"*":  [{
-			"type": "Perish",
-			"freshHours": { "avg": 120 },
-			"transitionHours": { "avg": 48 },
-			"transitionedStack": { "type": "item", "code": "game:rot" },
-			"transitionRatio": 1
-		}]
-	},
+	"transitionableProps": [{
+		"type": "Perish",
+		"freshHours": { "avg": 120 },
+		"transitionHours": { "avg": 48 },
+		"transitionedStack": { "type": "item", "code": "game:rot" },
+		"transitionRatio": 0.25
+	}],
 	"materialDensity": 200,
 	"guiTransform": {
 		"translation": { "x": 0, "y": 0, "z": 0 },
