@@ -14,9 +14,9 @@
 			"containable": true,
 			"itemsPerLitre": 100,
 			"texturebytype": {
-				"*-rye": { "base": "game:block/pie/fill-busmeat", "alpha": 120 },
-				"*-spelt": { "base": "game:block/pie/fill-busmeat", "alpha": 180 },
-				"*": { "base": "game:block/pie/fill-busmeat", "alpha": 180 }
+				"*-rye": { "base": "game:block/pie/fill-bushmeat", "alpha": 120 },
+				"*-spelt": { "base": "game:block/pie/fill-bushmeat", "alpha": 180 },
+				"*": { "base": "game:block/pie/fill-bushmeat", "alpha": 180 }
 			},
 			"allowSpill": true,
 			"whenSpilled": { 
@@ -34,9 +34,9 @@
 	},
 	"shape": { "base": "game:item/liquid" },
 	"texturebytype": {
-		"*-rye": { "base": "game:block/pie/fill-busmeat", "alpha": 120 },
-		"*-spelt": { "base": "game:block/pie/fill-busmeat", "alpha": 180 },
-		"*": { "base": "game:block/pie/fill-busmeat", "alpha": 180 }
+		"*-rye": { "base": "game:block/pie/fill-bushmeat", "alpha": 120 },
+		"*-spelt": { "base": "game:block/pie/fill-bushmeat", "alpha": 180 },
+		"*": { "base": "game:block/pie/fill-bushmeat", "alpha": 180 }
 	},
 	"creativeinventoryStacks": [ { "tabs": ["general", "liquids", "cheers"], "stacks": [ { "type": "block", "code": "game:woodbucket", "attributes": { "ucontents": [ { "type":"item", "code": "cheers:maltbeerportion-{type}", "makefull": true } ] } } ] } ],
 	"maxstacksize": 5000,
