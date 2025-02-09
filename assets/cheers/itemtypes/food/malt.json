@@ -5,7 +5,7 @@
 		{ "code": "type", "states": ["spelt", "rye" ] },
 		{ "code": "state", "states": ["light", "dark" ] }
 	],
-	"shape": { "base": "game:item/food/bread/{type}bread" },
+	"shape": { "base": "game:item/resource/crushed/rocksalt" },
 	"texturesbytype": {
 		"*-light": { "bread": {"base": "game:item/food/grain/{type}bread2" }},
 		"*-dark": { "bread": {"base": "game:item/food/grain/{type}bread" }}

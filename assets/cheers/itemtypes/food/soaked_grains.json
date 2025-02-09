@@ -13,7 +13,7 @@
 		"*": { "foodTags": ["{type}"], "nutritionPropsWhenInMeal": { "satiety": 240, "foodcategory": "Grain" }}
 	},
 	"texture": { "base": "game:block/food/grain/{type}-pile" },
-	"shape": { "base": "game:item/resource/crushed/normal"  },
+	"shape": { "base": "game:item/resource/crushed/rocksalt"  },
 	"creativeinventory": { "general": ["*"], "items": ["*"] },
 	"nutritionPropsByType": {
 		"*": {
