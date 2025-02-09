@@ -1,0 +1,21 @@
+{
+	"cheers:item-crushed-malt-rye-dark": "Crushed malt rye (dark)",
+	"cheers:item-crushed-malt-rye-light": "Crushed malt rye (light)",
+	"cheers:item-crushed-malt-spelt-dark": "Crushed malt spelt (dark)",
+	"cheers:item-crushed-malt-spelt-light": "Crushed malt spelt (light)",
+	"cheers:itemdesc-crushed-malt-*": "",
+	"cheers:item-germinatedgrain-rye": "Germinated grains (rye)",
+	"cheers:item-germinatedgrain-spelt": "Germinated rains (spelt)",
+	"cheers:itemdesc-germinatedgrain-*": "",
+	"cheers:item-malt-rye-dark": "Rye Malt (dark)",
+	"cheers:item-malt-rye-light": "Rye malt (light)",
+	"cheers:item-malt-spelt-dark": "Spelt malt (dark)",
+	"cheers:item-malt-spelt-light": "Spelt malt (light)",
+	"cheers:itemdesc-malt-*": "",
+	"cheers:item-soaked-rye": "Soaked Rye",
+	"cheers:item-soaked-spelt": "Soaked Spelt",
+	"cheers:itemdesc-soaked-*": "This grain has been thoroughly soaked in water.",
+	"cheers:item-maltbeerportion": "Maltbeer",
+	"cheers:incontainer-item-maltbeerportion": "Maltbeer",
+	"cheers:itemdesc-maltbeerportion": "This is Maltbeer"
+}
