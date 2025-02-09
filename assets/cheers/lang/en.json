@@ -1,21 +1,61 @@
 {
+	"cheers:cheersguide-title": "Cheers! Beerbrewing",
+	"cheers:cheersguide-text": "<strong>Cheers! Beerbrewing</strong><br><i>Beer Expanded</i><br><br><strong>Introduction</strong><br>Beerbrewing works differently here. You need to soak your grain in water, let it germinate, malt the germinated grain, and then cook the malt together with water to obtain wort.<br>This wort can then ferment in a barrel into beer.<br><br>The type of beer you get depends on the malt you use (light or dark) and if you put any other ingredients into the wort.<br><br>Currently, only 3 types of beer are obtainable and the only other ingredient other than malt and water is honey to obtain maltbeer",
+	
+	
 	"cheers:item-crushed-malt-rye-dark": "Crushed malt rye (dark)",
 	"cheers:item-crushed-malt-rye-light": "Crushed malt rye (light)",
 	"cheers:item-crushed-malt-spelt-dark": "Crushed malt spelt (dark)",
 	"cheers:item-crushed-malt-spelt-light": "Crushed malt spelt (light)",
-	"cheers:itemdesc-crushed-malt-*": "",
+	"cheers:itemdesc-crushed-malt-*": "This malt has been crushed thoroughly and is ready to be turned into wort!",
+
 	"cheers:item-germinatedgrain-rye": "Germinated grains (rye)",
-	"cheers:item-germinatedgrain-spelt": "Germinated rains (spelt)",
-	"cheers:itemdesc-germinatedgrain-*": "",
+	"cheers:item-germinatedgrain-spelt": "Germinated grains (spelt)",
+	"cheers:itemdesc-germinatedgrain-*": "These grains have sprouted and are ready to be malted.",
+
 	"cheers:item-malt-rye-dark": "Rye Malt (dark)",
 	"cheers:item-malt-rye-light": "Rye malt (light)",
 	"cheers:item-malt-spelt-dark": "Spelt malt (dark)",
 	"cheers:item-malt-spelt-light": "Spelt malt (light)",
-	"cheers:itemdesc-malt-*": "",
+	"cheers:itemdesc-malt-*": "These roasted grains smell heavenly!",
+
 	"cheers:item-soaked-rye": "Soaked Rye",
 	"cheers:item-soaked-spelt": "Soaked Spelt",
-	"cheers:itemdesc-soaked-*": "This grain has been thoroughly soaked in water.",
-	"cheers:item-maltbeerportion": "Maltbeer",
-	"cheers:incontainer-item-maltbeerportion": "Maltbeer",
-	"cheers:itemdesc-maltbeerportion": "This is Maltbeer"
+	"cheers:itemdesc-soaked-*": "This grain has been thoroughly soaked in water and will sprout soon enough.",
+
+	"cheers:item-alewort-rye": "Ale wort (rye)",
+	"cheers:item-alewort-spelt": "Ale wort (spelt)",
+	"cheers:incontainer-item-alewort-rye": "Ale wort (rye)",
+	"cheers:incontainer-item-alewort-spelt": "Ale wort (spelt)",
+	"cheers:itemdesc-alewort-*": "This cooked melange of light malt and water only needs some time to turn into delicious ale.",
+
+	"cheers:item-stoutwort-rye": "Stout wort (rye)",
+	"cheers:item-stoutwort-spelt": "Stout wort (spelt)",
+	"cheers:incontainer-item-stoutwort-rye": "Stout wort (rye)",
+	"cheers:incontainer-item-stoutwort-spelt": "Stout wort (spelt)",
+	"cheers:itemdesc-stoutwort-*": "This cooked melange of dark malt and water only needs some time to turn into delicious stout.",
+
+	"cheers:item-maltbeerwort-rye": "Maltbeer wort (rye)",
+	"cheers:item-maltbeerwort-spelt": "Maltbeer wort (spelt)",
+	"cheers:incontainer-item-maltbeerwort-rye": "Maltbeer wort (rye)",
+	"cheers:incontainer-item-maltbeerwort-spelt": "Maltbeer wort (spelt)",
+	"cheers:itemdesc-maltbeerwort-*": "This cooked melange of dark malt, water, and honey only needs some time to turn into delicious maltbeer.",
+
+	"cheers:item-maltbeerportion-rye": "Spelt maltbeer",
+	"cheers:item-maltbeerportion-spelt": "Rye maltbeer",
+	"cheers:incontainer-item-maltbeerportion-rye": "Rye maltbeer",
+	"cheers:incontainer-item-maltbeerportion-spelt": "Spelt maltbeer",
+	"cheers:itemdesc-maltbeerportion-*": "A full, sweet, caramelly treat not just for the little ones.",
+
+	"cheers:item-stoutportion-rye": "Spelt Stout",
+	"cheers:item-stoutportion-spelt": "Rye Stout",
+	"cheers:incontainer-item-stoutportion-rye": "Rye Stout",
+	"cheers:incontainer-item-stoutportion-spelt": "Spelt Stout",
+	"cheers:itemdesc-stoutportion-*": "A dark and strong ale with a malty taste.",
+
+	"cheers:item-aleportion-rye": "Spelt Ale",
+	"cheers:item-aleportion-spelt": "Rye Ale",
+	"cheers:incontainer-item-aleportion-rye": "Rye Ale",
+	"cheers:incontainer-item-aleportion-spelt": "Spelt Ale",
+	"cheers:itemdesc-aleportion-*": "Your everyday blonde ale. Cheers!"
 }

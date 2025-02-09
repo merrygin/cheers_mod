@@ -14,8 +14,9 @@
 			"containable": true,
 			"itemsPerLitre": 100,
 			"texturebytype": {
-				"*-rye": { "base": "game:block/liquid/honey", "alpha": 180 },
-				"*-spelt": { "base": "game:block/food/pie/fill-cassava", "alpha": 180 }
+				"*-rye": { "base": "game:block/liquid/beer" },
+				"*-spelt": { "base": "game:block/pie/fill-pear", "alpha": 180 },
+				"*": { "base": "game:block/liquid/beer" }
 			},
 			"allowSpill": true,
 			"whenSpilled": { 
@@ -33,8 +34,9 @@
 	},
 	"shape": { "base": "game:item/liquid" },
 	"texturebytype": {
-		"*-rye": { "base": "game:block/liquid/honey", "alpha": 180 },
-		"*-spelt": { "base": "game:block/food/pie/fill-cassava", "alpha": 180 }
+		"*-rye": { "base": "game:block/liquid/beer" },
+		"*-spelt": { "base": "game:block/pie/fill-pear", "alpha": 180 },
+		"*": { "base": "game:block/liquid/beer" }
 	},
 	"creativeinventoryStacks": [ { "tabs": ["general", "liquids", "cheers"], "stacks": [ { "type": "block", "code": "game:woodbucket", "attributes": { "ucontents": [ { "type":"item", "code": "cheers:aleportion-{type}", "makefull": true } ] } } ] } ],
 	"maxstacksize": 5000,
