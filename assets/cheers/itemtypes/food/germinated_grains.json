@@ -21,7 +21,7 @@
 		"*": { "foodTags": ["{type}"], "nutritionPropsWhenInMeal": { "satiety": 120, "foodcategory": "Grain" }}
 	},
 	"texture": { "base": "game:block/food/grain/{type}-pile" },
-	"shape": { "base": "game:item/resource/crushed/normal"  },
+	"shape": { "base": "cheers:shapes/germinated_grain"  },
 	"creativeinventory": { "general": ["*"], "items": ["*"] },
 	"nutritionPropsByType": {
 		"*": {
